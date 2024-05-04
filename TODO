@@ -1,13 +1,4 @@
-1. Expose API layer on top of GNews API
-
-- fetching N news articles - OK
-- finding a news article with a specific title or author, and searching by keywords - OK
-
-2. Design the API, add the REST API endpoints
-
-3. Add cache (use ElastiCache?):
-
-- Add a cache so users are not fetching the same things over and over
-
-4. Document the API using OpenAPI spec
-5. Add a few tests
+* Document the API using OpenAPI spec
+* Add a few tests
+* Add proper telemetry (logging, traces)
+* Add ElastiCache
