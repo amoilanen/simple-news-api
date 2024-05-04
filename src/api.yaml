@@ -1,0 +1,52 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: Simple News API
+  description: A simple API to fetch news articles
+paths:
+  /articles:
+    get:
+      description: Returns a list of articles
+      parameters:
+        - name: limit
+          in: query
+          description: Limits the number of articles
+          schema:
+            type: integer
+        - name: lang
+          in: query
+          description: Language
+          schema:
+            type: string
+        - name: category
+          in: query
+          description: News category to fetch the articles from, , mutually exclusive with "searchTerm"
+          schema:
+            type: string
+        - name: searchTerm
+          in: query
+          description: Search term which is used to look for the articles, mutually exclusive with "category"
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response containing the found articles
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - articles
+                properties:
+                  articles:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - title
+                        - url
+                      properties:
+                        title:
+                          type: string
+                        url:
+                          type: string

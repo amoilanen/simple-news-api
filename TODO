@@ -1,4 +1,3 @@
-* Document the API using OpenAPI spec
 * Add a few tests
 * Add proper telemetry (logging, traces)
 * Add ElastiCache

@@ -30,6 +30,10 @@ app.get('/articles', async (req, res) => {
   }
 })
 
+app.get('/', async (_, res) => {
+  res.sendFile(__dirname + '/api.yaml');
+});
+
 const port = process.env['PORT'] || 3000;
 app.listen(port, () => {
   console.log(`Server started on the port: ${port}`)
