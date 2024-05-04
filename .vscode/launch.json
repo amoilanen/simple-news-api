@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug file with Node",
+            "name": "Node: current file",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -15,6 +15,21 @@
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
-        }
+        },
+        {
+            "name": "Jest: current file",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/jest",
+            "args": [
+              "--runInBand", // Enables debugging within VS Code
+              "--watch", // Enables watching for changes and re-running tests
+              "${file}", // Runs the currently open test file
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal", // Output to VS Code terminal
+            "internalConsoleOptions": "neverOpen",
+            "sourceMaps": true,
+          }
     ]
 }

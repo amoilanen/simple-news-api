@@ -36,3 +36,9 @@ Fetch 5 top search results in English about "iPad":
 ```bash
 http "http://localhost:3000/articles?limit=5&lang=en&searchTerm=iPad"
 ```
+
+#### Running tests
+
+```
+npm run test
+```
