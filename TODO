@@ -1,0 +1,10 @@
+Expose API layer on top of GNews API:
+
+- fetching N news articles
+- finding a news article with a specific title or author, and searching by keywords
+
+Add cache (use ElastiCache?):
+
+- Add a cache so users are not fetching the same things over and over
+
+Document the API using OpenAPI spec

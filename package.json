@@ -1,0 +1,22 @@
+{
+  "name": "simple-news-api",
+  "version": "0.0.1",
+  "description": "Simple News API",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoilanen/simple-news-api.git"
+  },
+  "author": "Anton Moilanen <anton.a.moilanen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amoilanen/simple-news-api/issues"
+  },
+  "homepage": "https://github.com/amoilanen/simple-news-api#readme",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
