@@ -2,6 +2,8 @@
 
 Simple backend service for fetching the articles from GNews API https://gnews.io/
 
+API spec https://github.com/amoilanen/simple-news-api/blob/main/src/api.yaml
+
 ### Dev environment setup
 
 1. Make sure you have [node.js](https://nodejs.org/en) installed
@@ -17,7 +19,7 @@ npm install
 3. Start the server
 
 ```bash
-export GNEWS_API_KEY='<insert your API key here>'
+export GNEWS_API_KEY='<insert you API key here>';
 npm run start
 ```
 
