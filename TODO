@@ -1,3 +1,5 @@
 * Add more tests
+* Validate requests: parameter combinations are correct, parameter values are sensible, etc.
 * Add proper telemetry (logging, traces)
 * Add ElastiCache for caching
+* Deploy to AWS/add Kubernetes deployment files
