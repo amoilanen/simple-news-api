@@ -17,9 +17,9 @@ test('fetchTopArticles returns articles',  async () => {
            content: 'content2'
          },
          {
-           title: 'title1',
-           url: 'url1',
-           content: 'content1'
+           title: 'title3',
+           url: 'url3',
+           content: 'content3'
          }
        ]
      }
@@ -36,8 +36,8 @@ test('fetchTopArticles returns articles',  async () => {
       url: 'url2'
     },
     {
-      title: 'title1',
-      url: 'url1'
+      title: 'title3',
+      url: 'url3'
     }
   ]);
 });
